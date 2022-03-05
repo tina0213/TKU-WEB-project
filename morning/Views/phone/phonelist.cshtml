@@ -1,0 +1,50 @@
+﻿@model IEnumerable<morning.Models.introduce>
+
+@{
+    ViewBag.Title = "電話簿";
+}
+
+<h1 class="p-3 mb-2 font-weight-bold" style="color:#FAFAFA">電話簿</h1>
+
+<p>
+    @*Html.ActionLink("Create New", "Create")*@
+</p>
+<table class="table" style="background-color:#FFFFB5;">
+    <tr>
+        <th>
+            <h4 class=" font-weight-bold" style="color:#B87800;">@Html.DisplayNameFor(model => model.Name)</h4>
+            
+        </th>
+        <th>
+            <h4 class=" font-weight-bold" style="color:#B87800;">@Html.DisplayNameFor(model => model.Phone)</h4>
+            
+        </th>
+        <th>
+            <h4 class=" font-weight-bold" style="color:#B87800;">@Html.DisplayNameFor(model => model.Time)</h4>
+            
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td class=" font-weight-bold"style="color:#A36A00;">
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+    <td class=" font-weight-bold"style=" color: #B87800;">
+        @Html.DisplayFor(modelItem => item.Phone)
+    </td>
+    <td class=" font-weight-bold"style="color:#B87800;">
+        @Html.DisplayFor(modelItem => item.Time)
+    </td>
+    @*
+           <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    *@
+</tr>
+}
+
+</table>

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<morning.Models.Table>
+@{ ViewBag.Title = "Create"; }
+<h2>新增留言 </h2>
+
+@using (Html.BeginForm("Create", "Message")) 
+{ 
+    <div>
+        @Html.Label("店家")
+        @Html.TextBox("strTitle")<br />
+        @Html.Label("評分")
+        @Html.TextBox("score")<br />
+        @Html.Label("內容")
+        @Html.TextBox("strContent")<br />
+        <input type="submit" value="送出留言" class="btn btn-default" />
+    </div>
+}

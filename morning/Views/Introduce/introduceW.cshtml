@@ -1,0 +1,74 @@
+﻿@model IEnumerable<morning.Models.introduce>
+
+
+@{
+    ViewBag.Title = "店家介紹";
+}
+
+<h1 class="p-3 mb-2 font-weight-bold" style="color:#FAFAFA">店家介紹</h1>
+
+
+
+
+
+
+@Html.ActionLink("大學城", "introduceS", "Introduce", new { @class = "btn btn-light " })
+
+@Html.ActionLink("水源街", "introduceW", "Introduce", new { @class = "btn btn-light" })
+
+@Html.ActionLink("大田寮", "introduceB", "Introduce", new { @class = "btn btn-light" })
+
+<h1 class="display-4 font-weight-bold text-center" style="color:floralwhite;">---------------------水源街--------------------</h1>
+
+<br>
+<br>
+
+
+<div class="row" style="height:300px">
+
+    <div class="col-md-4" style="width: 33%;">
+        <div class="card" style="width: 100%;height:300px; background-color:#FFFFF0; opacity: 0.9">
+            <div class="card-body">
+                <h2 class="card-title  font-weight-bold text-center" style="color:brown">--早安兔寶堡--</h2>
+                <h4 class="card-subtitle text-muted ">營業時間 : 08:00–15:00(假日09:00–15:00 星期一休息)</h4><br>
+                <h4 class="card-subtitle text-muted ">電話 : 0913-757-365</h4><br>
+                <h4 class="card-subtitle text-muted ">地址 : 新北市淡水區水源街二段46號</h4><br>
+                <h4 class="card-subtitle text-muted ">綜合評價 : 食物***** 環境***** 服務****</h4><br>
+                @Html.ActionLink("Read More", "兔寶", "readmore", new { area = " " }, new { @class = "btn btn-outline-primary " })
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" style="width: 33%;">
+        <div class="card" style="width: 100%;height:300px; background-color:#FFFFF0; opacity: 0.9">
+            <div class="card-body">
+                <h2 class="card-title  font-weight-bold text-center" style="color:brown">--藍與白--</h2>
+                <h4 class="card-subtitle text-muted ">營業時間 : 07:30–14:00(假日08:30–14:30)</h4><br>
+                <h4 class="card-subtitle text-muted ">電話 : 0913-757-365</h4><br>
+                <h4 class="card-subtitle text-muted ">地址 : 新北市淡水區水源街二段74巷16號1樓</h4><br>
+                <h4 class="card-subtitle text-muted ">綜合評價 :  食物*** 環境**** 服務***</h4><br>
+                @Html.ActionLink("Read More", "藍白", "readmore", new { area = " " }, new { @class = "btn btn-outline-primary " })
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" style="width: 33%;">
+        <div class="card" style="width: 100%;height:300px; background-color:#FFFFF0; opacity: 0.9">
+            <div class="card-body">
+                <h2 class="card-title  font-weight-bold text-center" style="color:brown">--肥喵喵早午餐--</h2>
+                <h4 class="card-subtitle text-muted ">營業時間 : 07:30–14:00(假日09:30–14:00)</h4><br>
+                <h4 class="card-subtitle text-muted ">電話 : 02-2623-3390</h4><br>
+                <h4 class="card-subtitle text-muted ">地址 : 新北市淡水區水源街二段74巷3號</h4><br>
+                <h4 class="card-subtitle text-muted ">綜合評價 : 食物**** 環境**** 服務**</h4><br>
+                @Html.ActionLink("Read More", "肥喵", "readmore", new { area = " " }, new { @class = "btn btn-outline-primary " })
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<br>
+<br>

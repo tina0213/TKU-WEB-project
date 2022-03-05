@@ -1,0 +1,38 @@
+﻿@model IEnumerable<morning.Models.Table>
+@{ ViewBag.Title = "留言板"; }
+
+<div>
+
+    <h1 class="p-3 mb-2 font-weight-bold" style="color:#FAFAFA">留言版</h1>
+    @Html.ActionLink("新增留言", "Create", "message", new { @class = "btn btn-light " })
+    <div class="p-2 bd-highlight">
+    </div>
+    @if (Model != null)
+    {
+        <div class="row">
+            <div class="col-lg-12">
+                <table class="table" style="background-color:wheat ;opacity:0.8;">
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class=" font-weight-bold" style="color:black;">---店家--- : @item.Name</td>
+                            </tr>
+
+                            <tr>
+                                <td class=" font-weight-bold" style="color:black;">---評分--- : @item.score</td>
+                            </tr>
+                            <tr>
+                                <td class=" font-weight-bold" style="color:black;">---內容---  :@item.Content</td>
+                            </tr>
+                            <tr>
+                                <td class=" font-bold" style="color:darkslategrey;">    時間: @item.Time</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>}
+</div>
+

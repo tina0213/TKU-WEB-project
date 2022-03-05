@@ -1,0 +1,62 @@
+﻿@model IEnumerable<morning.Models.introduce>
+
+@{
+    ViewBag.Title = "店家介紹";
+}
+
+<h1 class="p-3 mb-2 font-weight-bold" style="color:#FAFAFA">店家介紹</h1>
+
+
+@Html.ActionLink("大學城", "introduceS", "Introduce", new { @class = "btn btn-light " })
+
+@Html.ActionLink("水源街", "introduceW", "Introduce", new { @class = "btn btn-light" })
+
+@Html.ActionLink("大田寮", "introduceB", "Introduce", new { @class = "btn btn-light" })
+
+
+
+<br>
+<br>
+
+<h1 class="display-4 font-weight-bold text-center" style="color:floralwhite;">---------------------大田寮--------------------</h1>
+
+
+<br>
+<br>
+<div class="row" style="height:300px">
+
+    <div class="col-md-4" style="width: 33%;">
+        <div class="card" style="width: 100%;height:300px; background-color:#FFFFF0; opacity: 0.9">
+            <div class="card-body">
+                <h2 class="card-title  font-weight-bold text-center" style="color:brown">--姐妹--</h2>
+                <h4 class="card-subtitle text-muted ">營業時間 : 06:00–13:00</h4><br>
+                <h4 class="card-subtitle text-muted ">電話 : 02-2621-3765</h4><br>
+                <h4 class="card-subtitle text-muted ">地址 : 新北市淡水區學府路175號</h4><br>
+                <h4 class="card-subtitle text-muted ">綜合評價 :食物***** 環境*** 服務****</h4><br>
+                @Html.ActionLink("Read More", "姐妹", "readmore", new { area = " " }, new { @class = "btn btn-outline-primary " })
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" style="width: 33%;">
+        <div class="card" style="width: 100%;height:300px; background-color:#FFFFF0; opacity: 0.9">
+            <div class="card-body">
+                <h2 class="card-title  font-weight-bold text-center" style="color:brown">--多朗克--</h2>
+                <h4 class="card-subtitle text-muted ">營業時間 : 07:00–14:30</h4><br>
+                <h4 class="card-subtitle text-muted ">電話 : 02-2626-3238</h4><br>
+                <h4 class="card-subtitle text-muted ">地址 : 新北市淡水區學府路191號</h4><br>
+                <h4 class="card-subtitle text-muted ">綜合評價 : 食物**** 環境**** 服務****</h4><br>
+
+                @Html.ActionLink("Read More", "多朗克", "readmore", new { area = " " }, new { @class = "btn btn-outline-primary " })
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+<br>
+<br>
